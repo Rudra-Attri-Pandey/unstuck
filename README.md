@@ -1,4 +1,5 @@
 # Unstuck
+![tests](https://github.com/Rudra-Attri-Pandey/unstuck/actions/workflows/tests.yml/badge.svg)
 
 Agents that don't quit on you. No sudden stops, no endless loops, no forgetting, no broken files.
 
