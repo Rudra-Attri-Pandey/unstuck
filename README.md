@@ -22,7 +22,11 @@ python examples/quickstart.py
 
 No keys needed. No internet needed. Stdlib only.
 
-## Before vs after
+## Demo
+
+![Unstuck demo: before gets stuck, after stays unstuck](assets/demo.svg)
+
+*Animated transcript of real runs — regenerate anytime with `python examples/make_demo.py`.*
 
 `examples/before_stuck.py` shows the classic fail: naive retry hammers the API,
 memory grows forever, same command repeats, bad edit stays broken.

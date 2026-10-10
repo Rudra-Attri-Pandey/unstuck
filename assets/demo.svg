@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="401" font-family="Consolas,Menlo,monospace" font-size="14">
+<title>Unstuck demo: before gets stuck, after stays unstuck</title>
+<rect width="720" height="401" rx="10" fill="#0d1117"/>
+<circle cx="28" cy="24" r="6" fill="#f85149"/>
+<circle cx="48" cy="24" r="6" fill="#d29922"/>
+<circle cx="68" cy="24" r="6" fill="#3fb950"/>
+<text x="92" y="29" fill="#8b949e" font-size="13">unstuck — before vs after</text>
+<text x="28" y="74" fill="#3fb950" font-weight="bold" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.50s" dur="0.3s" fill="freeze"/>$ python examples/before_stuck.py</text>
+<text x="28" y="101" fill="#f85149" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.35s" dur="0.3s" fill="freeze"/>BEFORE memory: 11 messages, ~5024 tokens, no budget.</text>
+<text x="28" y="128" fill="#f85149" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.20s" dur="0.3s" fill="freeze"/>BEFORE loop: same 'cat file' 5x, nothing stops it.</text>
+<text x="28" y="155" fill="#f85149" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="3.05s" dur="0.3s" fill="freeze"/>BEFORE edit: overwrote a.py, no backup. File stays broken.</text>
+<text x="28" y="182" fill="#f85149" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="3.90s" dur="0.3s" fill="freeze"/>Run after_unstuck.py to see the fix.</text>
+<text x="28" y="209" fill="#3fb950" font-weight="bold" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="4.75s" dur="0.3s" fill="freeze"/>$ python examples/after_unstuck.py</text>
+<text x="28" y="236" fill="#e6edf3" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="5.60s" dur="0.3s" fill="freeze"/>waiter: api OK</text>
+<text x="28" y="263" fill="#e6edf3" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="6.45s" dur="0.3s" fill="freeze"/>memory: 4 items in window, summaries=8</text>
+<text x="28" y="290" fill="#e6edf3" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="7.30s" dur="0.3s" fill="freeze"/>loop: halt_exact: same action 3x</text>
+<text x="28" y="317" fill="#e6edf3" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="8.15s" dur="0.3s" fill="freeze"/>undo restored: True</text>
+<text x="28" y="344" fill="#3fb950" font-weight="bold" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="9.00s" dur="0.3s" fill="freeze"/>$ python -m pytest tests/ -q</text>
+<text x="28" y="371" fill="#3fb950" font-weight="bold" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="9.85s" dur="0.3s" fill="freeze"/>5 passed in 1.34s</text>
+<rect x="174" y="358" width="8" height="16" fill="#3fb950"><animate attributeName="opacity" values="1;0;1" dur="1s" begin="10.70s" repeatCount="indefinite"/></rect>
+</svg>
